@@ -33,6 +33,7 @@ Before applying the U-Net, I preprocessed the datasets
 2. mIOU : Avg lung mIOU = 0.703, Avg liver mIOU = 0.689
 
 
+*** Goolge drive folder sharing link(Anyone in Yonsei with this link can view) : https://drive.google.com/drive/folders/1i9GZSLYYCJKc6Tq7NDuDQ1XDvvAs0_IY?usp=sharing
 *** Final data preprocessing code is '20210607_CNN_preprocessing_postprocessing_keras_multi_channel.ipynb' in this repos
 *** Final trained model is "U_Net_lung_20210603_256x256_lung_liver.h5" in 'U-Net_CT-Image-Segmentation-master/trained_model/'
 *** Final 2D U-Net segmentation main code is '20210604_UNet_multi_class_keras.ipynb' in 'U-Net_CT-Image-Segmentation-master/'

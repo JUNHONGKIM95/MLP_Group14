@@ -9,7 +9,8 @@ I shared the working folder link for anyone using Yonsei google email.
 Because of the original datset issue, we used public dataset which have 7 classes labeling instead.
 
 
-On our group project(Group14), I was in charge of CT segmentation using 2D U-Net
+On our group project(Group14), I was in charge of CT segmentation using 2D U-Net.
+I used keras framework for this image segmentation project.
 
 (Preprocessing)
 Before applying the U-Net, I preprocessed the datasets
@@ -30,3 +31,5 @@ Before applying the U-Net, I preprocessed the datasets
 (Evaluation for each class)
 1. Dice coefficient(DSC) : Avg lung DSC = 0.825, Avg liver DSC = 0.813
 2. mIOU : Avg lung mIOU = 0.703, Avg liver mIOU = 0.689
+
+*** Final 2D U-Net segmentation main code is '20210604_UNet_multi_class_keras'

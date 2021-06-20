@@ -1,2 +1,32 @@
 # MLP_Group14
 2021-1_MLP_Group14_JunhongKim
+
+
+I worked the project using Goolge Colab, so all the codes and corresponding datasets are on my Google drive folder.
+I shared the working folder link for anyone using Yonsei google email.
+
+
+Because of the original datset issue, we used public dataset which have 7 classes labeling instead.
+
+
+On our group project(Group14), I was in charge of CT segmentation using 2D U-Net
+
+(Preprocessing)
+Before applying the U-Net, I preprocessed the datasets
+1. Resolution resizing 512X512 --> 256X256
+2. Data split (train : 8 patients (3686), val : 2 patients (1090), test : 5 patients (2615))
+3. Choose two specific classes (lung, liver) for considering original dataset
+4. Make label data from grey-channel(1) to RGB-channel(3) for multi-class segmentation
+
+(Train model)
+1. Number of classes = 3
+2. Learning rate = 0.0002
+3. Batch normalization
+4. Epoch = 50
+5. Batch size = 32
+
+*** Final trained model is "U_Net_lung_20210603_256x256_lung_liver.h5" in 'U-Net_CT-Image-Segmentation-master/trained_model/'
+
+(Evaluation)
+1. Dice coefficient
+2. mIOU

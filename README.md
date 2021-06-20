@@ -18,6 +18,7 @@ Before applying the U-Net, I preprocessed the datasets
 2. Data split (train : 8 patients (3686), val : 2 patients (1090), test : 5 patients (2615))
 3. Choose two specific classes (lung, liver) for considering original dataset
 4. Make label data from grey-channel(1) to RGB-channel(3) for multi-class segmentation
+5. Save original nii format image files to npy format files
 
 (Train model)
 1. Number of classes = 3
@@ -26,10 +27,12 @@ Before applying the U-Net, I preprocessed the datasets
 4. Epoch = 50
 5. Batch size = 32
 
-*** Final trained model is "U_Net_lung_20210603_256x256_lung_liver.h5" in 'U-Net_CT-Image-Segmentation-master/trained_model/'
 
 (Evaluation for each class)
 1. Dice coefficient(DSC) : Avg lung DSC = 0.825, Avg liver DSC = 0.813
 2. mIOU : Avg lung mIOU = 0.703, Avg liver mIOU = 0.689
 
-*** Final 2D U-Net segmentation main code is '20210604_UNet_multi_class_keras'
+
+*** Final data preprocessing code is '20210607_CNN_preprocessing_postprocessing_keras_multi_channel.ipynb' in this repos
+*** Final trained model is "U_Net_lung_20210603_256x256_lung_liver.h5" in 'U-Net_CT-Image-Segmentation-master/trained_model/'
+*** Final 2D U-Net segmentation main code is '20210604_UNet_multi_class_keras.ipynb' in 'U-Net_CT-Image-Segmentation-master/'

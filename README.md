@@ -27,6 +27,6 @@ Before applying the U-Net, I preprocessed the datasets
 
 *** Final trained model is "U_Net_lung_20210603_256x256_lung_liver.h5" in 'U-Net_CT-Image-Segmentation-master/trained_model/'
 
-(Evaluation)
-1. Dice coefficient
-2. mIOU
+(Evaluation for each class)
+1. Dice coefficient(DSC) : Avg lung DSC = 0.825, Avg liver DSC = 0.813
+2. mIOU : Avg lung mIOU = 0.703, Avg liver mIOU = 0.689
